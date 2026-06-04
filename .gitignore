@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.conda/
+
+# Environment
+.env
+*.env
+venv/
+
+# Large model files — too big for GitHub
+models/biencoder_model/
+models/ner_model/
+models/crossencoder_model/
+models/qdrant_storage/
+*.pkl
+*.pt
+*.onnx
+*.bin
+*.safetensors
+
+# Data files — too large for GitHub
+ml/data/raw/
+ml/data/processed/
+*.csv
+*.parquet
+
+# MLflow
+mlruns/
+mlartifacts/
+mlflow.db
+*.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# VS Code
+.vscode/
+
+# Temp files
+tmp/
+temp/
