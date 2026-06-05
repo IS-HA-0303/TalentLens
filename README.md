@@ -124,26 +124,32 @@ Access:
 ---
 ## 📊 Screenshots
 
-### Home Page
-![Home](screenshots/01_home_page.png)
+#### Home Page
+![Home](screenshots/home.png)
 
-### Candidate Portal
-![Candidate](screenshots/02_candidate_skills.png)
+#### Candidate Portal — Skills Detected
+![Candidate](screenshots/candidate_portal.png)
 
-### Job Matches
-![Matches](screenshots/03_candidate_results.png)
+#### Candidate Portal — Job Matches
+![Matches](screenshots/candidate_result.png)
 
-### Skill Gap Analysis
-![SkillGap](screenshots/05_skill_gap.png)
+#### Job Search
+![JobSearch](screenshots/job_search.png)
 
-### MLOps Dashboard
-![MLOps](screenshots/06_mlops_dashboard.png)
+#### Skill Gap Analysis
+![SkillGap](screenshots/skill_gap.png)
 
-### MLflow Experiments
-![MLflow](screenshots/07_mlflow_experiments.png)
+#### MLOps Dashboard
+![MLOps](screenshots/mlops_dashboard.png)
 
-### FastAPI Docs
-![API](screenshots/08_fastapi_docs.png)
+#### MLflow Experiment Tracking
+![MLflow](screenshots/mlflow.png)
+
+#### FastAPI Documentation
+![API](screenshots/api.png)
+
+#### Live on Hugging Face Spaces
+![HuggingFace](screenshots/hugging_face.png)
 
 ---
 
