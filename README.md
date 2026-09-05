@@ -82,7 +82,7 @@ Ranked Job Matches + Skill Gap Analysis
 
 ---
 
-## 🔑 Key ML Concepts
+##  Key ML Concepts
 
 - **Two-Tower Bi-Encoder** — same architecture used at LinkedIn and Spotify for candidate matching
 - **Contrastive Learning** — MultipleNegativesRankingLoss (InfoNCE) for embedding training
@@ -94,34 +94,7 @@ Ranked Job Matches + Skill Gap Analysis
 - **Two-Stage Retrieval Pipeline** — fast ANN retrieval followed by accurate re-ranking
 
 ---
-## ⚡ Quick Start
 
-conda create -n talentlens python=3.11 -y
-conda activate talentlens
-
-pip install -r requirements.txt
-
-python -m uvicorn backend.app.main:app --port 8000
-
-python -m streamlit run streamlit_app/Home.py
-```
-Access:
-- Streamlit App: http://localhost:8501
-- FastAPI Docs: http://localhost:8000/docs
-- MLflow UI: http://localhost:5000
-```
----
-## 🔌 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | /candidates/upload | Upload PDF resume |
-| POST | /candidates/match | Full matching pipeline |
-| POST | /jobs/search | Semantic job search |
-| GET | /health | API health check |
-| GET | /metrics | Prometheus metrics |
-
----
 ## 📊 Screenshots
 
 #### Home Page
