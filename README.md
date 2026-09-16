@@ -109,9 +109,6 @@ Ranked Job Matches + Skill Gap Analysis
 #### Skill Gap Analysis
 ![SkillGap](screenshots/skill_gap.png)
 
-#### MLOps Dashboard
-![MLOps](screenshots/mlops_dashboard.png)
-
 #### FastAPI Documentation
 ![API](screenshots/api.png)
 
