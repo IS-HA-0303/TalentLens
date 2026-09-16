@@ -1,6 +1,6 @@
 # 🎯 TalentLens — AI-Powered Job Matching System
 
-A production-grade, end-to-end **ML system** that matches candidates to jobs using a **two-stage retrieval pipeline** — fine-tuned BERT for skill extraction, bi-encoder embeddings in Faiss vector DB, and cross-encoder re-ranking — deployed on Hugging Face Spaces.
+A production-grade, end-to-end **ML system** that matches candidates to jobs using a **two-stage retrieval pipeline** — fine-tuned BERT for skill extraction, bi-encoder embeddings in FAISS vector DB, and cross-encoder re-ranking — deployed on Hugging Face Spaces.
 
 ## Live Demo
 
@@ -16,7 +16,7 @@ This system uses a **4-stage ML pipeline**:
 |-------|-----------|------|
 |  Skill Extraction | Fine-tuned BERT NER | Extracts skills from resumes and job descriptions |
 |  Embedding | Bi-Encoder (all-MiniLM-L6-v2) | Converts text to 384-dim semantic vectors |
-|  Retrieval | Qdrant Vector DB (HNSW) | ANN search retrieves top-100 matching jobs |
+|  Retrieval | FAISS Vector DB (HNSW) | ANN search retrieves top-100 matching jobs |
 |  Re-ranking | Cross-Encoder (MiniLM) | Scores each pair, returns final top-10 |
 
 ---
@@ -27,8 +27,6 @@ This system uses a **4-stage ML pipeline**:
 -  **Skill Extraction** — hybrid BERT NER + dictionary matching detects 40+ skills from any resume
 -  **Skill Gap Analysis** — radar chart comparing your skills vs job requirements
 -  **Semantic Search** — natural language job search without exact keyword matching
--  **MLOps Dashboard** — live API health, model metrics, Qdrant stats, pipeline latency
--  **Experiment Tracking** — MLflow tracking for NER, bi-encoder, and cross-encoder runs
 
 ---
 
@@ -56,7 +54,7 @@ BERT NER  →  Skill Extraction
         ↓
 Bi-Encoder  →  384-dim Embedding
         ↓
-Qdrant HNSW  →  Top-100 Retrieval
+FAISS HNSW  →  Top-100 Retrieval
         ↓
 Cross-Encoder  →  Re-ranked Top-10
         ↓
@@ -72,12 +70,11 @@ Ranked Job Matches + Skill Gap Analysis
 | Embeddings | Sentence Transformers (all-MiniLM-L6-v2) |
 | NER Model | BERT base-uncased (fine-tuned) |
 | Re-ranking | Cross-Encoder (ms-marco-MiniLM-L-6-v2) |
-| Vector DB | Qdrant (HNSW index, Cosine similarity) |
-| Backend | FastAPI + Uvicorn + Pydantic v2 |
-| Frontend | Streamlit + Plotly |
-| MLOps | MLflow (experiment tracking + model registry) |
+| Vector DB | FAISS (HNSW index, Cosine similarity) |
+| Backend | FastAPI  |
+| Frontend | Streamlit |
 | PDF Parsing | PyMuPDF |
-| Deployment | Hugging Face Spaces + Docker |
+| Deployment | Hugging Face Spaces |
 | Data | LinkedIn Job Postings (Kaggle, 123K+ raw) |
 
 ---
@@ -114,9 +111,6 @@ Ranked Job Matches + Skill Gap Analysis
 
 #### MLOps Dashboard
 ![MLOps](screenshots/mlops_dashboard.png)
-
-#### MLflow Experiment Tracking
-![MLflow](screenshots/mlflow.png)
 
 #### FastAPI Documentation
 ![API](screenshots/api.png)
