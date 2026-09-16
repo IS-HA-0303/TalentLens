@@ -1,6 +1,6 @@
 # 🎯 TalentLens — AI-Powered Job Matching System
 
-A production-grade, end-to-end **ML system** that matches candidates to jobs using a **two-stage retrieval pipeline** — fine-tuned BERT for skill extraction, bi-encoder embeddings in Qdrant vector DB, and cross-encoder re-ranking — deployed on Hugging Face Spaces with a full MLOps stack.
+A production-grade, end-to-end **ML system** that matches candidates to jobs using a **two-stage retrieval pipeline** — fine-tuned BERT for skill extraction, bi-encoder embeddings in Faiss vector DB, and cross-encoder re-ranking — deployed on Hugging Face Spaces.
 
 ## Live Demo
 
