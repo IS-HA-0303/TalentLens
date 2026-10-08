@@ -95,7 +95,7 @@ Ranked Job Matches + Skill Gap Analysis
 ## 📊 Screenshots
 
 #### Home Page
-![Home](screenshots/home.png)
+![Home](screenshots/home1.png)
 
 #### Candidate Portal — Skills Detected
 ![Candidate](screenshots/candidate_portal.png)
