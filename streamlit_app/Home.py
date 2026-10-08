@@ -16,7 +16,7 @@ st.markdown("""
 <div class="tl-page-header fade-in">
     <h1>🎯 TalentLens</h1>
     <p>AI-Powered Job · Candidate Matching System &nbsp;·&nbsp;
-       Two-stage retrieval · BERT NER · Qdrant · Cross-Encoder</p>
+       Two-stage retrieval · BERT NER · FAISS · Cross-Encoder</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -68,7 +68,7 @@ with col1:
                         <div style="color:#fff; font-weight:600; font-size:0.84rem;">
                             Semantic Search</div>
                         <div style="color:rgba(255,255,255,0.4); font-size:0.75rem;">
-                            384-dim embeddings in Qdrant vector DB</div>
+                            384-dim embeddings in FAISS vector DB</div>
                     </div>
                 </div>
                 <div style="display:flex; align-items:center; gap:12px;
@@ -116,7 +116,7 @@ with col2:
             <div style="color:#34d399; font-size:0.65rem;">(384-dimensional)</div>
             <div style="color:rgba(255,255,255,0.15); font-size:0.95rem; margin:1px 0;">↓</div>
             <div style="color:rgba(255,255,255,0.5); font-size:0.73rem;">
-                Qdrant ANN Search</div>
+                FAISS ANN Search</div>
             <div style="color:#fbbf24; font-size:0.65rem;">(top 100 results)</div>
             <div style="color:rgba(255,255,255,0.15); font-size:0.95rem; margin:1px 0;">↓</div>
             <div style="color:rgba(255,255,255,0.5); font-size:0.73rem;">
